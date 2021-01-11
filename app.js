@@ -10,9 +10,9 @@ let letterCheckBox = document.getElementById("lettersCheckBox")
 let generateButton = document.getElementById("generateButton");
 
 setInterval(() => {
-    console.log(charCheckBox.value);
-    console.log(numberCheckBox.value);
-    console.log(letterCheckBox.value);
+    console.log(charCheckBox.checked);
+    console.log(numberCheckBox.checked);
+    console.log(letterCheckBox.checked);
 }, 1000)
 
 
