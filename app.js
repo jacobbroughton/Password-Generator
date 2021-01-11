@@ -4,12 +4,12 @@ const numberArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const passwordSpan = document.getElementById("passwordText");
 let limitInput = document.getElementById("charLimitInput");
-let charCheckBox = document.getElementById("charCheckbox")
-let numberCheckBox = document.getElementById("numbersCheckbox")
-let letterCheckBox = document.getElementById("lettersCheckbox")
+let charCheckBox = document.getElementById("charCheckBox")
+let numberCheckBox = document.getElementById("numbersCheckBox")
+let letterCheckBox = document.getElementById("lettersCheckBox")
 let generateButton = document.getElementById("generateButton");
 
-console.log(charCheckBox.value)
+console.log(charCheckBox.value);
 console.log(numberCheckBox.value);
 console.log(letterCheckBox.value);
 
