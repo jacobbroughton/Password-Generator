@@ -9,6 +9,9 @@ let numberCheckBox = document.getElementById("numbersCheckbox")
 let letterCheckBox = document.getElementById("lettersCheckbox")
 let generateButton = document.getElementById("generateButton");
 
+console.log(charCheckBox.value)
+console.log(numberCheckBox.value);
+console.log(letterCheckBox.value);
 
 const generatePassword = e => {
     let charLimit = limitInput.value === "" ? 20 : limitInput.value;
