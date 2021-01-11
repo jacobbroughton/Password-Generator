@@ -9,9 +9,12 @@ let numberCheckBox = document.getElementById("numbersCheckBox")
 let letterCheckBox = document.getElementById("lettersCheckBox")
 let generateButton = document.getElementById("generateButton");
 
-console.log(charCheckBox.value);
-console.log(numberCheckBox.value);
-console.log(letterCheckBox.value);
+setInterval(() => {
+    console.log(charCheckBox.value);
+    console.log(numberCheckBox.value);
+    console.log(letterCheckBox.value);
+}, 1000)
+
 
 const generatePassword = e => {
     let charLimit = limitInput.value === "" ? 20 : limitInput.value;
