@@ -9,21 +9,15 @@ let numberCheckBox = document.getElementById("numbersCheckBox")
 let letterCheckBox = document.getElementById("lettersCheckBox")
 let generateButton = document.getElementById("generateButton");
 
-setInterval(() => {
-    console.log(charCheckBox.checked);
-    console.log(numberCheckBox.checked);
-    console.log(letterCheckBox.checked);
-}, 1000)
-
 
 const generatePassword = e => {
     let charLimit = limitInput.value === "" ? 20 : limitInput.value;
     let passwordArr = [];
     
     for(let i = 0; i < charLimit; i++) {
-        let randomCharacter = characterArr[Math.floor(Math.random() * characterArr.length)];
-        let randomLetter = letterArr[Math.floor(Math.random() * letterArr.length)];
-        let randomNumber = numberArr[Math.floor(Math.random() * numberArr.length)];
+        let randomCharacter = charCheckBox.checked ? characterArr[Math.floor(Math.random() * characterArr.length)] : "";
+        let randomLetter = letterCheckBox.checked ? letterArr[Math.floor(Math.random() * letterArr.length)] : "";
+        let randomNumber = numberCheckBox.checked ? numberArr[Math.floor(Math.random() * numberArr.length)] : "";
         let randomChars = [randomCharacter, randomLetter, randomNumber];
         let randomChar = randomChars[Math.floor(Math.random() * randomChars.length)];
         passwordArr.push(randomChar);
