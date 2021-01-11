@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <div id="mainSection">
+        <div class="passwordParent">
+            <span id="passwordText"></span>
+        </div>
+        <form class="form">
+            <label id="charLimitLabel">Enter the # of characters you'd like (optional, default is 20)</label>
+            <input type="number" id="charLimitInput"/>
+            <div class="checkboxParent">
+                <label>Include characters?</label>
+                <input id="charCheckBox" type="checkbox"/>
+            </div>
+            <div class="checkboxParent">
+                <label>Include numbers?</label>
+                <input id="numbersCheckBox" type="checkbox"/>
+            </div>
+            <div class="checkboxParent">
+                <label>Include letters?</label>
+                <input id="lettersCheckBox" type="checkbox"/>
+            </div>
+
+
+            <button id="generateButton" type="submit">Generate Password</button> 
+        </form>
+        
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
